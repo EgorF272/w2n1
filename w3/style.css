@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.fon1 {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_item {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form_input {
+    width: 100%;
+}
+
+.checkbox_label {
+    margin-left: 5px;
+}
+
+.checkbox_input {
+    margin-right: 5px;
+}
