@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+label {
+    font-weight: bold; 
+}
+
+.submit {
+    padding: 10px 20px; 
+    background-color: #390a59; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.submit:hover {
+    background-color: #ad00b3; 
+}
+.error {
+    border-color: red; 
+}
+
+input[name="names"] {
+    border: 1px solid #ced4da; 
+    border-radius: 4px; 
+    padding: 8px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+}
+
+input[name="names"]:focus {
+    border-color: #80bdff; 
+    outline: 0; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+}
+
+
+input[name="names"][names="error"] {
+    border-color: red; 
+}
