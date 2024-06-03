@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif; /* Шрифт для всего документа */
+    background-color: #f0f0f0; /* Цвет фона */
+}
+
+.fon1 {
+    background-color: #fff; /* Цвет фона блока формы */
+    padding: 20px; /* Внутренний отступ */
+}
+
+/* Общие стили для всех input и textarea */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%; /* Ширина элементов ввода */
+    padding: 10px; /* Внутренний отступ */
+    margin-bottom: 15px; /* Отступ между элементами */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Закругление углов */
+    box-sizing: border-box; /* Учитываем границы в общей ширине */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Отступ между радио- и чекбоксами и текстом */
+}
+
+label {
+    font-weight: bold; /* Жирный шрифт для меток */
+}
+
+.submit {
+    padding: 10px 20px; /* Внутренний отступ кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.submit:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+.error {
+    border-color: red; /* Красная рамка для элементов с ошибкой */
+}
+/* Стили для поля с ФИО */
+/* Стили для поля с ФИО */
+input[name="names"] {
+    border: 1px solid #ced4da; /* Цвет границы поля */
+    border-radius: 4px; /* Закругление углов */
+    padding: 8px; /* Внутренний отступ */
+    width: 100%; /* Ширина поля */
+    box-sizing: border-box; /* Учитываем границы в общей ширине */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Плавное изменение цвета границы */
+}
+
+/* Стили для поля с ФИО при фокусе */
+input[name="names"]:focus {
+    border-color: #80bdff; /* Цвет границы при фокусе */
+    outline: 0; /* Убираем стандартное выделение при фокусе */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Тень при фокусе */
+}
+
+/* Стили для поля с ФИО при вводе неправильного значения */
+input[name="names"][names="error"] {
+    border-color: red; /* Красная граница при ошибке */
+}
